@@ -1,0 +1,249 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+#section-placeholder {
+  height: 200px;
+  background-color: white;
+}
+
+/* --- Colors --- */
+/* --- Font weight --- */ /* smartphones, iPhone, portrait 480x320 phones */
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+/* big landscape tablets, laptops, and desktops */
+/* hi-res laptops and desktops */
+/* ===== BLOG SECTION ===== */
+#section-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4A4A4A;
+  position: relative;
+  padding: 2em 0;
+}
+
+.section-blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1280px;
+}
+
+.blog-icon-container {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  height: 180px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 0;
+  background-color: #4A4A4A;
+}
+
+.blog-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.section-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #5AC37E;
+  font-size: 26px;
+  position: relative;
+  margin: 1em 0;
+}
+
+.section-description {
+  color: white;
+  font-size: 20px;
+  max-width: 960px;
+  margin-bottom: 2em;
+}
+
+/* ===== CTA SECTION ===== */
+#section-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.section-cta-container {
+  width: 1280px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-picture-container {
+  width: 62.5%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.cta-picture {
+  object-fit: cover;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 37.5%;
+  height: 100%;
+  padding: 0 1em;
+}
+
+.cta-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  color: #5AC37E;
+  font-weight: 800;
+  font-size: 24px;
+  padding: 0 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cta-button {
+  height: 20%;
+  width: 100%;
+  font-size: 24px;
+  background-color: #5AC37E;
+  background: linear-gradient(180deg, #5AC37E 0%, #41988D 100%);
+  color: white;
+  padding: 1em 1ch;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-article {
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article-picture {
+  height: 50%;
+  object-fit: cover;
+}
+
+.article-description {
+  height: 50%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-text {
+  color: black;
+}
+
+.article-timestamp {
+  color: #ADADAD;
+  display: inline-block;
+}
+.article-timestamp::before {
+  content: url(../../assets/clock.svg);
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  margin-right: 1ch;
+}
+
+/*# sourceMappingURL=style.css.map */

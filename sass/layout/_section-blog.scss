@@ -1,0 +1,48 @@
+@use '../abstract/' as a;
+
+/* ===== BLOG SECTION ===== */
+#section-blog {
+  @include a.flex-center;
+  background-color: a.$clr-dgrey;
+  position: relative;
+  padding: 2em 0;
+}
+
+.section-blog-container {
+  @include a.flex-center;
+  flex-direction: column;
+  width: 1280px;
+}
+
+.blog-icon-container {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  height: 180px;
+  width: 180px;
+  @include a.flex-center;
+  border-radius: 50%;
+  z-index: 0;
+  background-color: a.$clr-dgrey;
+}
+
+.blog-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.section-heading {
+  font-weight: a.$fw-bold;
+  text-transform: uppercase;
+  color: a.$clr-primary;
+  font-size: 26px;
+  position: relative;
+  margin: 1em 0;
+}
+
+.section-description {
+  color: white;
+  font-size: 20px;
+  max-width: 960px;
+  margin-bottom: 2em;
+}

@@ -1,0 +1,38 @@
+@use '../abstract/' as a;
+
+.carousel-article {
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article-picture {
+  height: 50%;
+  object-fit: cover;
+}
+
+.article-description {
+  height: 50%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-text {
+  color: black;
+}
+
+.article-timestamp {
+  color: a.$clr-lgrey;
+  display: inline-block;
+  &::before {
+    content: url(../../assets/clock.svg);
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    margin-right: 1ch;
+  }
+}
