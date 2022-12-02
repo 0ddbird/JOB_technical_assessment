@@ -1,0 +1,78 @@
+@use '../abstract/' as a;
+
+.blog-article {
+  cursor: pointer;
+  height: 400px;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 3em;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+
+  &:hover .article-text {
+    color: a.$clr-primary;
+    transition: color .25s;
+  }
+
+  &:hover .article-picture {
+    transform: scale(1.2);
+    transition: transform .25s;
+  }
+
+  @include a.mq-961 {
+    margin: 0 0 3em 0;
+  }
+  @include a.mq-1281 {
+    margin: 0 2em 3em 2em;
+    max-width: 300px;
+  }
+}
+
+.article-link {
+  text-decoration: none;
+}
+
+.article-picture-wrapper {
+  overflow: hidden;
+  height: 50%;
+  width: 100%;
+}
+
+.article-picture {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform .25s;
+}
+
+.article-description {
+  height: 50%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-text {
+  color: black;
+  transition: color .25s;
+}
+
+.article-timestamp {
+  color: a.$clr-lgrey;
+  display: inline-block;
+  &::before {
+    content: url(https://0ddbird.github.io/Mon_super_blog/assets/clock.svg);
+    height: auto;
+    width: 1em;
+    display: inline-block;
+    margin-right: 1ch;
+    vertical-align: middle;
+  }
+}

@@ -13,6 +13,7 @@
 .section-cta-container {
   @include a.flex-center;
   flex-direction: column-reverse;
+
   @include a.mq-961 {
     flex-direction: row;
     height: 400px;
@@ -24,21 +25,20 @@
   overflow: hidden;
   border-radius: 10px;
   width: 90%;
-  
-  
+
   @include a.mq-961 {
     height: 100%;
     width: 62.5%;
   }
+}
 
-  & .cta-picture {
-    object-fit: cover;
-    height: 100%;
+.cta-picture {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  @include a.mq-1281 {
     width: 100%;
-
-    @include a.mq-1281 {
-      width: 100%;
-    }
   }
 }
 
@@ -48,24 +48,18 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1em;
+
   @include a.mq-961 {
     width: 37.5%;
     height: 100%;
     margin-bottom: 0;
     padding: 0 1em;
   }
-
-  @include a.mq-1281 {
-
-  }
 }
 
 .cta-heading {
-  margin-bottom: 1em;
-  @include a.mq-961 {
-    margin-bottom: 0;
-  }
   @include a.flex-center;
+  margin-bottom: 1em;
   height: 80%;
   color: a.$clr-primary;
   font-weight: a.$fw-extra-bold;
@@ -74,6 +68,7 @@
   text-align: center;
   text-transform: uppercase;
 
+  @include a.mq-961 { margin-bottom: 0; }
 }
 
 .cta-button {
