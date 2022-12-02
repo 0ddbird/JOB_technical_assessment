@@ -1,5 +1,6 @@
-function addObserver(elements) {
+const isEven = (i) =>  i % 2 === 0
 
+function addObserver(elements) {
   const observerOptions = 
       {
           root: null, 
@@ -9,9 +10,7 @@ function addObserver(elements) {
   const observer = new IntersectionObserver(function (entries, observer) {
       entries.forEach(entry => {
           if (!entry.isIntersecting) return
-          console.log(entry.target)
-          const isEvenIndex = entry.target.index % 2 === 0
-          entry.target.classList.add(isEvenIndex ? 'load-right' : 'load-left')
+          entry.target.classList.add(isEven(entry.target.index) ? 'load-right' : 'load-left')
           observer.unobserve(entry.target)
       })
   }, observerOptions)
@@ -23,8 +22,9 @@ export function addScrollAnimation(elements) {
     let i = 0
     elements.forEach(element => {
         element.index = i
-        element.classList.add(element.index % 2 === 0 ? 'lazy-right' : 'lazy-left')
+        element.classList.add(isEven(element.index % 2) ? 'lazy-right' : 'lazy-left')
         i++
     })
     addObserver(elements)
 }
+
