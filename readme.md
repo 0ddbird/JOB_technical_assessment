@@ -4,7 +4,7 @@
 
 Intégrer une [maquette](https://www.figma.com/file/Xayw7jyCa3v8U8XdTq4PCf/test---frontend?t=MzjXfEgkgckHrrsX-6) depuis Figma.
 
-![maquette](project/mockup.png)
+![maquette](./mockup.png)
 
 ## 2 - Briefing
 
