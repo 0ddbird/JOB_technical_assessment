@@ -319,7 +319,7 @@ th {
   display: inline-block;
 }
 .article-timestamp::before {
-  content: url(../../assets/clock.svg);
+  content: url(./assets/clock.svg);
   height: auto;
   width: 1em;
   display: inline-block;
