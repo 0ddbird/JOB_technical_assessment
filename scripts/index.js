@@ -1,5 +1,5 @@
-const navIconGreen = "<img class='arrow-green' src='../../assets/arrow.svg'/>"
-const navIconWhite = "<img class='arrow-white' src='../../assets/arrow-white.svg'/>"
+const navIconGreen = "<img class='arrow-green' src='./assets/arrow.svg'/>"
+const navIconWhite = "<img class='arrow-white' src='./assets/arrow-white.svg'/>"
 
 const navText = [`<div class='nav-button prev owl-prev'>${navIconGreen}${navIconWhite}</div>`, `<div class='nav-button next owl-next'>${navIconGreen}${navIconWhite}</div>`]
 
