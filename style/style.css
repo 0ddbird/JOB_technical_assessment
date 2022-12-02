@@ -195,18 +195,24 @@ th {
 }
 
 .cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 20%;
   width: 100%;
   font-size: 24px;
-  background-color: #5AC37E;
-  background: linear-gradient(180deg, #5AC37E 0%, #41988D 100%);
   color: white;
   padding: 1em 1ch;
   border-radius: 10px;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: linear-gradient(#5AC37E 0%, #41988D 50%, #5AC37E 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+  transition: background-position 0.25s;
+}
+.cta-button:hover {
+  background-position: bottom;
+  transition: background-position 0.25s;
 }
 
 .carousel-article {
@@ -263,10 +269,11 @@ th {
 }
 .article-timestamp::before {
   content: url(../../assets/clock.svg);
-  height: 1em;
+  height: auto;
   width: 1em;
   display: inline-block;
   margin-right: 1ch;
+  vertical-align: middle;
 }
 
 .owl-carousel {
@@ -292,6 +299,7 @@ th {
   position: absolute;
   height: 3em;
   width: 3em;
+  top: 50%;
 }
 .nav-button .arrow-green {
   position: absolute;
@@ -307,7 +315,7 @@ th {
 }
 
 .prev {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(50%);
   left: 0;
 }
 .prev .arrow-green {
@@ -319,6 +327,7 @@ th {
 
 .next {
   right: 0;
+  transform: translateY(-50%);
 }
 .next .arrow-green {
   right: 0;
