@@ -1,4 +1,10 @@
+@use '../abstract/' as a;
+
 #section-placeholder {
-  height: 200px;
+  height: 100px;
+  @include a.mq-961 {
+    height: 150px;
+  }
+
   background-color: white;
 }

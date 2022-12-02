@@ -11,7 +11,11 @@
 .section-blog-container {
   @include a.flex-center;
   flex-direction: column;
-  width: 1120px;
+  width: 90%;
+
+  @include a.mq-1281 {
+    max-width: 1120px;
+  }
 }
 
 .blog-icon-container {

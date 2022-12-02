@@ -9,10 +9,9 @@ $(document).ready(function(){
     {
         nav: true,
         loop: true,
-        margin: 5,
-        stagePadding: 30,
         dots: false,
         center: false,
+        stagePadding: 10,
         navText,
         responsive: {
             0: {
@@ -20,11 +19,12 @@ $(document).ready(function(){
                 items: 1,
                 loop: true,
             },
-            600: {
+            961: {
                 nav: true,
+                stagePadding: 40,
                 items: 2
             },
-            1000: {
+            1281: {
                 nav: true,
                 items: 3
             }
