@@ -380,12 +380,12 @@ th {
 }
 @media (min-width: 961px) {
   .blog-article {
-    margin: 0 0 3em 0;
+    margin: 3em 0;
   }
 }
 @media (min-width: 1281px) {
   .blog-article {
-    margin: 0 2em 3em 2em;
+    margin: 3em 2em;
     max-width: 300px;
   }
 }

@@ -25,10 +25,10 @@
   }
 
   @include a.mq-961 {
-    margin: 0 0 3em 0;
+    margin: 3em 0;
   }
   @include a.mq-1281 {
-    margin: 0 2em 3em 2em;
+    margin: 3em 2em;
     max-width: 300px;
   }
 }
